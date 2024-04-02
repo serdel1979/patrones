@@ -1,7 +1,7 @@
 using DesignPatterns.ASP.Models;
-using DesignPatterns.Model.Data;
 using DesignPatterns.Respository;
 using Microsoft.AspNetCore.Mvc;
+using Patterns.UnitOW.Entities;
 using System.Diagnostics;
 
 namespace DesignPatterns.ASP.Controllers

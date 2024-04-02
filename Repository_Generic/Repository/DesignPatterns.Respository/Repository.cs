@@ -1,5 +1,6 @@
-﻿using DesignPatterns.Model.Data;
+﻿
 using Microsoft.EntityFrameworkCore;
+using Patterns.UnitOW.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

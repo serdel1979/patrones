@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>disable</Nullable>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Respository\DesignPatterns.Respository.csproj" />
     <ProjectReference Include="..\Patterns.UnitOW\Patterns.UnitOW.csproj" />
   </ItemGroup>
 

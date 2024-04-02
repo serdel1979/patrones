@@ -1,6 +1,8 @@
-using DesignPatterns.Model.Data;
+
 using DesignPatterns.Respository;
 using Microsoft.EntityFrameworkCore;
+using Patterns.UnitOW.Entities;
+using UnitOffWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,7 @@ builder.Services.AddDbContext<PatternsContext>(op =>
 });
 
 builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
+builder.Services.AddScoped<IUnitOffWork, UnitOffWork.UnitOffWork>();
 
 var app = builder.Build();
 
