@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Model\DesignPatterns.Model.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Respository\DesignPatterns.Respository.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,9 +1,16 @@
+using DesignPatterns.Model.Data;
 using DesignPatterns.Respository;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<PatternsContext>(op =>
+{
+    op.UseNpgsql(builder.Configuration.GetConnectionString("Connection"));
+});
 
 builder.Services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
 
